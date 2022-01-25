@@ -3,7 +3,137 @@
 @import 'reset';
 @import 'global';
 
+.header {
 
+    padding: 60px 0;
+
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .header__navigation
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .header__search
+
+    &__search {
+        position: relative;
+        margin-right: 35px;
+    }
+
+    &__search::before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/icons/search-icon.svg');
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+        top: 0;
+        right: 0;
+    }
+
+    // .header__buy
+
+    &__buy {
+        position: relative;
+    }
+
+    &__buy::before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/icons/cart-icon.svg');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        // left: 0;
+
+    }
+
+    // &__buy::after {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $orange;
+    //     width: 14px;
+    //     height: 14px;
+    //     border-radius: 50%;
+    //     right: 0;
+        
+    // }
+
+    // .header__number
+
+    &__number {
+        position: absolute;
+        background-color: $orange;
+        color: $white;
+        font-size: 10px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        line-height: 14px;
+        text-align: center;
+        // left: 150%;
+        bottom: 50%;
+        right: 100%;
+        // left: 5%;
+    }
+
+    
+}
+
+.logo {
+
+    // .logo__img
+
+    &__img {
+        width: 100%;
+    }
+}
+.menu {
+
+    margin-right: 63px;
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .menu__item
+
+    &__item:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    // .menu__link
+
+    &__link {
+        color: $title;
+        font-size: 18px;
+    }
+
+    &__link--active {
+        color: $orange;
+    }
+}
 
 
 
