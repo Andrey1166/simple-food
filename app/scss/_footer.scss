@@ -1,0 +1,211 @@
+.footer {
+
+    &__content {
+        max-width: 200px;
+        margin-right: 70px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        position: relative;
+        @extend %Rubik-500;
+        font-size: 14px;
+        padding: 13px 39px 13px 70px;
+
+        &:focus,
+        &:hover,
+        &:active {
+
+            .footer__btn--icon {
+                fill: $accent;
+            }
+        }
+    }
+
+    &__btn--icon {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 20%;
+        top: 35%;
+        fill: $white;
+        transition: fill 0.3s;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        margin-right: 75px;
+    }
+
+    &__input {
+        padding: 13px 15px;
+        max-width: 200px;
+        width: 100%;
+        height: 44px;
+        resize: inherit;
+        background-color: $white;
+        border: $gray 1px solid;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        box-shadow: 0px 0px 0px 2px transparent;
+        transition: box-shadow 0.3s, border 0.3s;
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+            border: 1px solid transparent;
+        }
+
+        &::placeholder {
+            color: $gray;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        &:hover::placeholder {
+            color: $title;
+        }
+    }
+
+    &__item {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    &__connection {
+        display: inline-flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 2;
+        font-style: normal;
+    }
+
+    &__location {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/location-icon.svg');
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 15%;
+        }
+    }
+
+
+
+    &__phone {
+        margin-bottom: 15px;
+        font-size: 16px;
+        position: relative;
+        padding-left: 30px;
+        margin-right: auto;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/phone-icon.svg');
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 15%;
+        }
+    }
+
+    &__email {
+        margin-bottom: 15px;
+        font-size: 16px;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/icons/email-icon.svg');
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 15%;
+        }
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__lists {
+        box-shadow: 0px 0px 0px 2px transparent;
+
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+    }
+
+    &__network {
+        display: block;
+        position: relative;
+        background-color: $silver200;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        transition: color 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+            background-color: #FFF2ED;
+        }
+
+        &:hover {
+            background-color: $accent;
+            box-shadow: 0px 0px 0px 2px transparent;
+
+            .footer__icon {
+                fill: $white;
+            }
+        }
+
+        &:active {
+            background-color: #FFF2ED;
+
+            .footer__icon {
+                fill: $accent;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        fill: $default;
+        width: 21px;
+        height: 21px;
+        top: 23%;
+        left: 23%;
+        transition: fill 0.3s;
+    }
+
+    &__copy {
+        max-width: 100vw;
+        font-size: 14px;
+        padding: 30px 0;
+        text-align: center;
+        border-top: 1px solid $gray;
+    }
+}
