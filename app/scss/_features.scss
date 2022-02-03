@@ -1,0 +1,64 @@
+.features {
+
+    // padding: 120px 0;
+
+    &__inner {
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        margin: 0 70px;
+    }
+
+    &__content {
+        padding: 58px 0;
+
+        max-width: 470px;
+        margin-left: auto;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        color: $title;
+        font-size: 24px;
+        line-height: 1.5;
+        display: block;
+        position: relative;
+        margin-bottom: 18px;
+        padding-left: 64px;
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 0;
+    }
+
+    &__item--time::before {
+        background-image: url('../images/icons/timer-icon.svg');
+    }
+
+    &__item--delivery::before {
+        background-image: url('../images/icons/delivery-icon.svg');
+    }
+
+    &__item--restaurant::before {
+        background-image: url('../images/icons/restaurant-icon.svg');
+    }
+
+    &__item--restaurant {
+        margin-bottom: 30px;
+    }
+
+
+}
