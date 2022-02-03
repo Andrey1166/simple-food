@@ -11,8 +11,20 @@ $(function(){
 
     $('.testimonials__slider').slick({
         dots: true
-        // arrows: false
     })
+
+
+    function funonload() {
+        $('.slick-prev').toggleClass('slick-prev--active');
+    } 
+    window.onload = funonload;
+
+
+    $(document).ready(function () {
+        $(".slick-prev--active").focus();
+    });
+
+
 
     var mixer = mixitup('.popular__content');
 });
