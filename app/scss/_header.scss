@@ -1,36 +1,7 @@
 .header {
 
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__inner {
-        margin-right: 50px;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 45px;
-    }
-
-    &__link {
-        font-size: 18px;
-
-        &--active {
-            color: $accent;
-        }
-    }
-
     &__navigation {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &__search {
@@ -38,6 +9,8 @@
     }
 
     &__buy {
+
+        position: relative;
 
         &:hover .header__number {
             color: $accent;
@@ -53,9 +26,11 @@
 
     &__buy,
     &__search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 44px;
         height: 44px;
-        position: relative;
         box-shadow: 0px 0px 0px 2px transparent;
         border-radius: 5px;
         transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
@@ -85,13 +60,10 @@
     }
 
     &__icon {
-        position: absolute;
         width: 24px;
         height: 24px;
         stroke: $title;
         fill: transparent;
-        top: 25%;
-        left: 24%;
         transition: stroke 0.3s;
     }
 
@@ -107,10 +79,35 @@
         justify-content: center;
         align-items: center;
         top: 17%;
-        left: 60%;
+        right: 10%;
         transition: color 0.3s, background-color 0.3s;
     }
 
+}
+
+.menu {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    &__link {
+        font-size: 18px;
+
+        &--active {
+            color: $accent;
+        }
+    }
 }
 
 .logo {
