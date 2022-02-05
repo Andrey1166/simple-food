@@ -10,7 +10,11 @@ $(function(){
     })
 
     $('.testimonials__slider').slick({
-        dots: true
+        dots: true,
+        arrows: true,
+
+        prevArrow: '<button type="button" class="slick-prev"><svg class="prev-arrow"><use xlink:href="images/sprite.svg#prev-arrow-icon"></use></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg class="next-arrow"><use xlink:href="images/sprite.svg#next-arrow-icon"></use></svg></button>'
     })
 
 
