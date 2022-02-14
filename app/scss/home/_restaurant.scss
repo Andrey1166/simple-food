@@ -1,17 +1,39 @@
 .restaurant {
 
+    padding-bottom: 30px;
+
+    @include r(560) {
+        padding: 35px 0 15px;
+    }
+
     &__title {
         text-align: center;
         margin-bottom: 45px;
+
+        @include r(560) {
+            margin-bottom: 30px;
+        }
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 0;
+
+        @include r(1230) {
+            justify-content: center;
+        }
+
+        .slick-dots {
+            @include r(560) {
+                bottom: -1%;
+                position: absolute;
+            }
+        }
     }
 
     &__item {
+        margin: 0 15px 30px;
         max-width: 370px;
         background-color: $white;
         border-radius: 10px;
@@ -22,10 +44,16 @@
         &:hover {
             box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
         }
+
+        @include r(992) {
+            max-width: 345px;
+        }
+
     }
 
     &__img {
         margin-bottom: 15px;
+        max-width: 370px;
     }
 
     &__name {
@@ -34,6 +62,7 @@
         text-align: left;
         margin-bottom: 20px;
         padding-left: 20px;
+        @include line-clamp(1);
     }
 
     &__info {
@@ -48,12 +77,15 @@
         padding-left: 52px;
         margin-bottom: 23px;
         position: relative;
+        @include line-clamp(1);
 
         &::before {
             content: "";
             position: absolute;
             background-image: url('../images/icons/clock-icon.svg');
             background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             width: 22px;
             height: 22px;
             left: 13%;
@@ -61,7 +93,7 @@
         }
     }
 
-    &_link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;

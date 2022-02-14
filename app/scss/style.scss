@@ -5,11 +5,12 @@
 @import 'global';
 
 @import 'header';
-@import 'hero';
-@import 'popular';
-@import 'features';
-@import 'restaurant';
-@import 'testimonials';
-@import 'app';
+@import 'home/hero';
+@import 'card';
+@import 'home/popular';
+@import 'home/features';
+@import 'home/restaurant';
+@import 'home/testimonials';
+@import 'home/app';
 
 @import 'footer';

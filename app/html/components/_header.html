@@ -9,6 +9,10 @@
 
             <ul class="menu__list">
 
+                <a class="logo__mobile" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="39">
+                </a>
+
                 <li class="menu__item">
                     <a class="menu__link  menu__link--active" href="#">
                         Главная
@@ -27,12 +31,74 @@
                     </a>
                 </li>
 
+                <address class="menu__connection">
+
+                    <span class="footer__info footer__info--location menu__info">
+                        ул. Смирнова 2/3
+                    </span>
+    
+                    <a class="footer__info footer__info--phone menu__info menu__link" href="tel:+79068057043">
+                        79068057043
+                    </a>
+    
+                    <a class="footer__info footer__info--email menu__info menu__link" href="mailto:support@sfood.com">
+                        support@sfood.com
+                    </a>
+    
+                    <ul class="footer__social">
+    
+                        <li class="footer__lists menu__lists">
+                            <a class="footer__network menu__network" href="https://www.facebook.com"
+                                target="blank">
+    
+                                <span class="sr-only">
+                                    ссылка на страницу в фейсбуке
+                                </span>
+    
+                                <svg class="footer__icon menu__icon">
+                                    <use xlink:href="images/sprite.svg#facebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="footer__lists menu__lists">
+                            <a class="footer__network menu__network" href="https://www.twitter.com"
+                                target="blank">
+    
+                                <span class="sr-only">
+                                    ссылка на страницу в твиттере
+                                </span>
+    
+                                <svg class="footer__icon menu__icon">
+                                    <use xlink:href="images/sprite.svg#twitter-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="footer__lists menu__lists">
+                            <a class="footer__network menu__network" href="https://www.instagram.com"
+                                target="blank">
+    
+                                <span class="sr-only">
+                                    ссылка на страницу в инстаграме
+                                </span>
+    
+                                <svg class="footer__icon menu__icon">
+                                    <use xlink:href="images/sprite.svg#instagram-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                </address>
+
             </ul>
 
             <div class="header__navigation">
 
                 <a class="header__search" href="#">
-                    
+
                     <span class="sr-only">
                         иконка поиска
                     </span>
@@ -55,6 +121,11 @@
 
                     <span class="header__number">4</span>
                 </a>
+
+                <button class="burger" type="button">
+                    <span class="burger__line"></span>
+                    <span class="sr-only">Мобильное меню</span>
+                </button>
 
             </div>
 
